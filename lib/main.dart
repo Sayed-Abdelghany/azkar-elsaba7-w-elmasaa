@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sub1/pages/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      builder:(context,id) => MaterialApp(
+      builder:(context,id) => const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        home:  HomePage(),
       ),
     );
   }

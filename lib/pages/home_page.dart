@@ -4,6 +4,8 @@ import 'package:sub1/const/category_list.dart';
 import 'package:sub1/const/items_list.dart';
 import 'package:sub1/pages/category_page.dart';
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +37,7 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 height: 110.h,
-                color: Color(0xffB8B7BE),
+                color: const Color(0xffB8B7BE),
                 child: Center(
                   child: Text(items[index],
                     style: TextStyle(color: Colors.white,fontSize: 30.sp),),
